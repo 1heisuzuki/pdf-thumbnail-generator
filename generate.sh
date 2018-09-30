@@ -16,7 +16,7 @@ gs \
 -dTextAlphaBits=4 \
 -dGraphicsAlphaBits=4 \
 -dMaxStripSize=8192 \
--sOutputFile=temp_%d.jpg \
+-sOutputFile=temp_%010d.jpg \
 ${TARGET}
 
 montage -tile $2x$3 -resize 100% -geometry +0+0 temp_*.jpg marged.jpg
